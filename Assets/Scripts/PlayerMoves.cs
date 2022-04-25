@@ -29,11 +29,11 @@ public class PlayerMoves : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            player.transform.Rotate(Vector3.fwd * speedRotation);
+            player.transform.position -= player.transform.right * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            player.transform.Rotate(Vector3.fwd * -speedRotation);
+            player.transform.position += player.transform.right * speed * Time.deltaTime;
         }
     }
 
