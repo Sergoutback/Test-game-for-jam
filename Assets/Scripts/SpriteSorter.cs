@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpriteSorter : MonoBehaviour
 {
+    public bool isStatic = false;
     public float offset = 0;
     private int sortingOrdegBase = 0;
     private new Renderer renderer;
@@ -16,5 +17,8 @@ public class SpriteSorter : MonoBehaviour
     private void LateUpdate()
     {
         renderer.sortingOrder = (int)(sortingOrdegBase - transform.position.y + offset);
+
+        if (isStatic)
+            Destroy(this);
     }
 }
