@@ -7,7 +7,7 @@ public class HumanMoves : MonoBehaviour
 {
     public Transform player;
     public float movementSpeed = 10;
-    public float runAwaySpeed = 50;
+    public float runAwaySpeed = 5;
 
     void Start()
     {
@@ -33,10 +33,10 @@ public class HumanMoves : MonoBehaviour
     {
         Vector3 direction = transform.position - player.position;
         direction = Vector3.Normalize(direction);
-        //direction.y = 0;
-        direction.x = 0;
+        //direction.x = 0;
+        //adirection.z = 0;
         transform.rotation = Quaternion.Euler(direction);
-        transform.Translate(transform.forward * runAwaySpeed);
+        transform.Translate(transform.right * runAwaySpeed);
         
     }
 }
