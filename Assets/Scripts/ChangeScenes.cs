@@ -17,6 +17,10 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void ChangeTo3_MainScene()
+    {
+        SceneManager.LoadScene(3);
+    }
     public void Quit()
     {
         Application.Quit();
