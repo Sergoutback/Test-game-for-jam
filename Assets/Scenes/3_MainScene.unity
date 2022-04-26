@@ -20516,6 +20516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 508007852}
   movementSpeed: 10
+  runAwaySpeed: 5
 --- !u!114 &1805587074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20535,11 +20536,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1805587073}
           m_TargetAssemblyTypeName: HumanMoves, Assembly-CSharp
-          m_MethodName: OntriggerEnter2d
-          m_Mode: 2
+          m_MethodName: HumanRunAway
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 1178004035}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Collider, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 

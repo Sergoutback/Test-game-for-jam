@@ -7,6 +7,7 @@ public class HumanMoves : MonoBehaviour
 {
     public Transform player;
     public float movementSpeed = 10;
+    public float runAwaySpeed = 50;
 
     void Start()
     {
@@ -21,10 +22,21 @@ public class HumanMoves : MonoBehaviour
 
         //if (transform.position == player.position)
         //    OntriggerEnter2d();
+        OntriggerEnter2d();
     }
 
-    public void OntriggerEnter2d(Collider player)
+    public void OntriggerEnter2d()
     {
-        transform.position = Vector3.zero;
+        HumanRunAway();
+    }
+    public void HumanRunAway()
+    {
+        Vector3 direction = transform.position - player.position;
+        direction = Vector3.Normalize(direction);
+        //direction.y = 0;
+        direction.x = 0;
+        transform.rotation = Quaternion.Euler(direction);
+        transform.Translate(transform.forward * runAwaySpeed);
+        
     }
 }
