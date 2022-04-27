@@ -35,14 +35,8 @@ public class Shooting : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D shit)
     {
-        if (shit.gameObject.tag == "Player")
-        {
-            Destroy();
-        }
-        if (shit.gameObject.tag == "Ground")
-        {
-            Destroy();
-        }
+     
+        
         if (shit.gameObject.tag == "zona")
         {
             Destroy();
