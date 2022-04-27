@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1bfcd0f0fa7b8468f281d6bbbaf320, type: 3}
   m_Name: LensDistortion
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c1be1b6c95cd2e41b27903b9270817f, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
@@ -65,12 +65,12 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.788
+    m_Value: 0.444
     min: 0
     max: 1
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.771
+    m_Value: 0.476
     min: 0.01
     max: 1
   roundness:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   redOutRedIn:
     m_OverrideState: 1
-    m_Value: -200
+    m_Value: -118
     min: -200
     max: 200
   redOutGreenIn:
@@ -154,7 +154,7 @@ MonoBehaviour:
     max: 200
   redOutBlueIn:
     m_OverrideState: 1
-    m_Value: -200
+    m_Value: -43
     min: -200
     max: 200
   greenOutRedIn:
@@ -179,7 +179,7 @@ MonoBehaviour:
     max: 200
   blueOutGreenIn:
     m_OverrideState: 1
-    m_Value: -200
+    m_Value: 200
     min: -200
     max: 200
   blueOutBlueIn:
@@ -187,4 +187,4 @@ MonoBehaviour:
     m_Value: 200
     min: -200
     max: 200
-  m_SelectedChannel: 0
+  m_SelectedChannel: 2
