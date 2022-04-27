@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,12 +34,12 @@ public class HumanMoves : MonoBehaviour
     public void HumanRunAway()
     {
         Vector3 direction = transform.position - player.position;
+
         direction = Vector3.Normalize(direction);
-        transform.rotation = Quaternion.Euler(direction);
-        var angle = UnityEngine.Random.Range(0, 180);
-        //Vector3 randomDirection = transform.Rotate(0, angle, 0);
-        //direction = transform.Translate(transform.position + transform.(UnityEngine.Random.Range(0, 360)) * runAwaySpeed);
-        transform.Translate(transform.right * runAwaySpeed);
+
+        (float, float, float) eulerAngles = (Random.Range(0, 360), Random.Range(0, 360), 0f);
+
+        transform.Translate(direction * runAwaySpeed);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
