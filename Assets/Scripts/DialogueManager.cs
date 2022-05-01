@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
         Time.timeScale = 0;
 
         dialogueBox.SetActive(true);
-        continueText.text = "Continue >>";
+        continueText.text = "Продолжить >>";
         // Debug.Log("Starting conversation with " + dialogue.name);
         nameText.text = dialogue.name;
         sentenses.Clear();
@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
 
         if (sentenses.Count == 0) {
-            continueText.text = "End dialogue";
+            continueText.text = "Закончить";
         }
     }
 
