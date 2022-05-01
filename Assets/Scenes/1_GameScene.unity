@@ -21074,8 +21074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939451cab6ec7946a19fce796f94138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 508007852}
-  moveSpeed: 4
 --- !u!81 &2067353872
 AudioListener:
   m_ObjectHideFlags: 0
