@@ -26,6 +26,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue) {
         // can animate to display dialogueBox
+        Time.timeScale = 0;
+
         dialogueBox.SetActive(true);
         continueText.text = "Continue >>";
         // Debug.Log("Starting conversation with " + dialogue.name);
@@ -64,8 +66,9 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void EndDialogue() {
+    public void EndDialogue() {
         dialogueBox.SetActive(false);
+        Time.timeScale = 1;
         // Debug.Log("Dialog Ended");
     }
 

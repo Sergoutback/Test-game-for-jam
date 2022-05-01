@@ -13,29 +13,32 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-        lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+        if (Time.timeScale != 0.0f) {
 
-        firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
+            lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            GameObject bulletClone = Instantiate(bullet);
-            bulletClone.transform.position = firePoint.position;
-            bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+            firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
 
-            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
-            Destroy(bulletClone, 5);
-        }
+            if (Input.GetMouseButtonDown(0))
+            {
+                GameObject bulletClone = Instantiate(bullet);
+                bulletClone.transform.position = firePoint.position;
+                bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
 
-        if (Input.GetMouseButton(1))
-        {
-            GameObject bulletClone = Instantiate(bullet);
-            bulletClone.transform.position = firePoint.position;
-            bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+                bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
+                Destroy(bulletClone, 5);
+            }
 
-            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
-            Destroy(bulletClone, 1);
+            if (Input.GetMouseButton(1))
+            {
+                GameObject bulletClone = Instantiate(bullet);
+                bulletClone.transform.position = firePoint.position;
+                bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+
+                bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
+                Destroy(bulletClone, 1);
+            }
         }
 
     }
