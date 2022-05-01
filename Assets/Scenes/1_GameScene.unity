@@ -21079,11 +21079,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2067353873}
   - component: {fileID: 2067353872}
-  - component: {fileID: 2067353871}
   - component: {fileID: 2067353870}
   - component: {fileID: 2067353877}
   - component: {fileID: 2067353878}
   - component: {fileID: 2067353879}
+  - component: {fileID: 2067353871}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -21146,6 +21146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d939451cab6ec7946a19fce796f94138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 508007852}
+  moveSpeed: 1
 --- !u!81 &2067353872
 AudioListener:
   m_ObjectHideFlags: 0
