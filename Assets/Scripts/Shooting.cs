@@ -25,24 +25,24 @@ public class Shooting : MonoBehaviour
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
 
             bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
+            Destroy(bulletClone, 5);
         }
 
-    }
-
-    void Destroy()
-    {
-        Destroy(gameObject);
-    }
-    void OnCollisionEnter2D(Collision2D shit)
-    {
-     
-        
-        if (shit.gameObject.tag == "zona")
+        if (Input.GetMouseButton(1))
         {
-            Destroy();
+            GameObject bulletClone = Instantiate(bullet);
+            bulletClone.transform.position = firePoint.position;
+            bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+
+            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
+            Destroy(bulletClone, 1);
         }
 
-
     }
+    
+}
+    
 
-}   
+    
+
+  
