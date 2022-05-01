@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     private bool isChasing = false;
     private bool readyToAttack = true;
 
-    private int health = 10;
+    public int health = 10;
 
     private GameObject player;
 
@@ -38,8 +38,7 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col) {
         if (col.gameObject.tag == "Player") {
-            Debug.Log("COLLISION");
-            // col.gameObject.GetComponent<Player>().takeDamage(1);
+            col.gameObject.GetComponent<Player>().takeDamage(1);
         }
     }
 
@@ -89,6 +88,7 @@ public class Enemy : MonoBehaviour
     }
 
     public void takeDamage(int damage) {
+        Debug.Log(damage + " damage to an Enemy!");
         health -= damage;
         if (health <= 0) die();
     }
