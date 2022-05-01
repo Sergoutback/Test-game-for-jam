@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Camcontroll : MonoBehaviour {
+public class Сamcontroll : MonoBehaviour {
 	public Transform playerTransform;
 	public float moveSpeed;
 	
