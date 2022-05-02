@@ -237,4 +237,5 @@ MonoBehaviour:
   movementSpeed: 25
   minDistance: 50
   maxDistance: 300
+  stars: {fileID: 4223144219871882420, guid: fb8568e6615a4b94795c217ec0b4b4e1, type: 3}
   health: 3
