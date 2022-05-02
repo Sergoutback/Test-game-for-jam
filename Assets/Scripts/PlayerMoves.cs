@@ -21,31 +21,29 @@ public class PlayerMoves : MonoBehaviour
     void Update()
     {
         if (Time.timeScale != 0.0f) {
-
+            anim.SetInteger("pose", 3);
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
-                player.transform.position += player.transform.up * speed * Time.deltaTime;
-                anim.SetInteger("Pose", 1);
-            }
-
+                anim.SetInteger("pose", 0);
+                transform.position += transform.up * speed * Time.deltaTime;
+            } 
             if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
-                player.transform.position -= player.transform.up * speed * Time.deltaTime;
-                anim.SetInteger("Pose", 0);
+                anim.SetInteger("pose", 1);
+                transform.position -= transform.up * speed * Time.deltaTime;
             }
-
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
-                player.transform.position -= player.transform.right * speed * Time.deltaTime;
-                anim.SetInteger("Pose", 2);
+                anim.SetInteger("pose", 2);
                 gameObject.transform.localScale = new Vector3(-1, 1, 1);
+                transform.position -= transform.right * speed * Time.deltaTime;
             }
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
-                player.transform.position += player.transform.right * speed * Time.deltaTime;
-                anim.SetInteger("Pose", 2);
+                anim.SetInteger("pose", 2);
                 gameObject.transform.localScale = new Vector3(1,1,1);
-            }
+                transform.position += transform.right * speed * Time.deltaTime;
+            } 
         } 
     }
 
