@@ -14,7 +14,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private GameObject dialogueBox;
     [SerializeField]
-    private Text continueText;
+    // private Text continueText;
 
     public Queue<string> sentenses;
 
@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
         Time.timeScale = 0;
 
         dialogueBox.SetActive(true);
-        continueText.text = "Продолжить >>";
+        // continueText.text = "Продолжить >>";
         nameText.text = dialogue.name;
         sentenses.Clear();
 
@@ -52,9 +52,9 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
 
-        if (sentenses.Count == 0) {
-            continueText.text = "Закончить";
-        }
+        // if (sentenses.Count == 0) {
+        //     continueText.text = "Закончить";
+        // }
     }
 
     IEnumerator TypeSentence(string sentence) {
