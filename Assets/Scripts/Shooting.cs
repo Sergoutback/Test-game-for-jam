@@ -24,7 +24,7 @@ public class Shooting : MonoBehaviour
             {
                 GameObject bulletClone = Instantiate(bullet);
                 bulletClone.transform.position = firePoint.position;
-                bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+                bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle - 180);
 
                 bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
                 Destroy(bulletClone, 5);
@@ -34,7 +34,7 @@ public class Shooting : MonoBehaviour
             {
                 GameObject bulletClone = Instantiate(bullet);
                 bulletClone.transform.position = firePoint.position;
-                bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+                bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle - 180);
 
                 bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
                 Destroy(bulletClone, 1);
