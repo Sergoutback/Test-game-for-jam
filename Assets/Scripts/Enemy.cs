@@ -7,17 +7,19 @@ public class Enemy : MonoBehaviour
     public float movementSpeed = 25.0f;
     public float minDistance = 50.0f;
     public float maxDistance = 300.0f;
+    public GameObject stars;
     private bool direction = true;
     private bool isPatrolling = true;
     private bool isChasing = false;
     private bool readyToAttack = true;
+
 
     public int health = 3;
 
     private GameObject player;
 
     void OnTriggerEnter2D(Collider2D col) {
-        if (col.gameObject.tag == "Player") {
+        if (col.gameObject.tag == "Player" && isPatrolling) {
             startChase(col.gameObject);
         }
     }
@@ -31,7 +33,6 @@ public class Enemy : MonoBehaviour
 
     void stopChase() {
         isPatrolling = true;
-        StopAllCoroutines();
         StartCoroutine(DirectionCoroutine());
         isChasing = false;
     }
@@ -88,7 +89,6 @@ public class Enemy : MonoBehaviour
     }
 
     public void takeDamage(int damage) {
-        Debug.Log(damage + " damage to an Enemy!");
         health -= damage;
         if (health <= 0) die();
     }
@@ -99,12 +99,18 @@ public class Enemy : MonoBehaviour
 
     public void getStunned() {
         // visually confirm stun
+        // add starts
         StartCoroutine(StunCoroutune());
     }
 
     IEnumerator StunCoroutune() {
-        yield return new WaitForSeconds(2f);
-        transform.Translate(Vector2.zero);
+        stopChase();
+        isPatrolling = false;
+        GameObject tempStars = Instantiate(stars, transform); 
+        tempStars.transform.localPosition = new Vector2(0, 45f);
+        yield return new WaitForSeconds(4f);
+        isPatrolling = true;
+        Destroy(tempStars);
     }
 
     IEnumerator ReloadAttackCoroutine() {

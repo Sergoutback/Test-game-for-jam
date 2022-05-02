@@ -30,7 +30,6 @@ public class DialogueManager : MonoBehaviour
 
         dialogueBox.SetActive(true);
         continueText.text = "Продолжить >>";
-        // Debug.Log("Starting conversation with " + dialogue.name);
         nameText.text = dialogue.name;
         sentenses.Clear();
 
@@ -69,7 +68,6 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue() {
         dialogueBox.SetActive(false);
         Time.timeScale = 1;
-        // Debug.Log("Dialog Ended");
     }
 
 

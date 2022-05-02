@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class PlayerStrike : MonoBehaviour
 {
-
     void OnTriggerEnter2D(Collider2D col) {
         if (col.CompareTag("EnemyHitBox")) {
-            col.transform.parent.GetComponent<Enemy>().takeDamage(1);
-            Destroy(gameObject);
-            
+            Debug.Log(col.transform.parent.name);
+            col.transform.parent.GetComponent<Enemy>().getStunned();
         }
     }
 

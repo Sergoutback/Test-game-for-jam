@@ -5,11 +5,13 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public GameObject bullet;
+    public GameObject strike;
     public Transform firePoint;
     public float bulletSpeed = 50;
     public GameObject Other;
     Vector2 lookDirection;
     float lookAngle;
+
 
     void Update()
     {
@@ -31,14 +33,13 @@ public class Shooting : MonoBehaviour
                 Destroy(bulletClone, 5);
             }
 
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButtonDown(1))
             {
-                GameObject bulletClone = Instantiate(bullet);
-                bulletClone.transform.position = firePoint.position;
-                bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle - 180);
+                GameObject strikeClone = Instantiate(strike);
+                strikeClone.transform.position = (Vector2) transform.position + direction * 30;
+                strikeClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle + 90);
+                Destroy(strikeClone, 0.2f);
 
-                bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
-                Destroy(bulletClone, 1);
             }
         }
 
