@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -42,7 +43,15 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
-        // freeze time or move to menu
+        // replace sprite to blood?
+
+        GameObject.Find("GameOverDialog").GetComponent<DialogueTrigger>().TriggerDialogue();
+        StartCoroutine(ReloadCoroutine());
+    }
+
+    IEnumerator ReloadCoroutine() {
+        yield return new WaitForSeconds(1);
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
     }
 }
