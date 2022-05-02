@@ -13,7 +13,9 @@ public class Enemy : MonoBehaviour
     private bool isChasing = false;
     private bool readyToAttack = true;
 
+    public HealthBarBehaviour healthBar;
 
+    public int maxHealth = 3;
     public int health = 3;
 
     private GameObject player;
@@ -47,6 +49,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        healthBar.setHealth(health, maxHealth);
         StartCoroutine(DirectionCoroutine());
     }
 
@@ -90,6 +93,7 @@ public class Enemy : MonoBehaviour
 
     public void takeDamage(int damage) {
         health -= damage;
+        healthBar.setHealth(health, maxHealth);
         if (health <= 0) die();
     }
 

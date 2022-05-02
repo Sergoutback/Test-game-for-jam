@@ -7,12 +7,22 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public int health = 10;
-    public Text healthText;
+    private int maxHealth;
+    public Slider slider;
+
+    void Start() {
+        Debug.Log(health);
+        maxHealth = health;
+        slider.maxValue = maxHealth;
+        slider.value = maxHealth;
+        slider.fillRect.GetComponentInChildren<Image>().color = Color.red;
+    }
 
     public void takeDamage(int damage)
     {
         health -= damage;
-        healthText.text = "HP: " + health;
+        slider.value = health;
+
         if (health <= 0)
         {
             Die();
