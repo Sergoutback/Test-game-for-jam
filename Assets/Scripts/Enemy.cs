@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     private bool isChasing = false;
     private bool readyToAttack = true;
 
-    public int health = 10;
+    public int health = 3;
 
     private GameObject player;
 
@@ -98,6 +98,7 @@ public class Enemy : MonoBehaviour
     }
 
     public void getStunned() {
+        // visually confirm stun
         StartCoroutine(StunCoroutune());
     }
 
