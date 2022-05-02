@@ -1902,7 +1902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717cc28d47fcd3b40b1c45d4bda03562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 8005008094932546178, guid: 222b9f3f66943834ca2a678d20905631, type: 3}
+  bullet: {fileID: 4485648447503054889, guid: edf7301981281c2438e6a435db885a93, type: 3}
   firePoint: {fileID: 2013765787}
   bulletSpeed: 150
   Other: {fileID: 8005008094932546178, guid: 222b9f3f66943834ca2a678d20905631, type: 3}
