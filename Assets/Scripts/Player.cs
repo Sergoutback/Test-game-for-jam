@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
     }
 
     IEnumerator ReloadCoroutine() {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.1f);
         Scene scene = SceneManager.GetActiveScene(); 
         SceneManager.LoadScene(scene.name);
     }
