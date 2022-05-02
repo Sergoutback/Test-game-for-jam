@@ -16,7 +16,8 @@ public class Shooting : MonoBehaviour
         if (Time.timeScale != 0.0f) {
 
             lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+            Vector2 direction = (lookDirection - (Vector2) transform.position).normalized;
+            lookAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
             firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
 
