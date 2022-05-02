@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
 
     private GameObject player;
 
+    public GameObject bloodSpill;
+
     void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player" && isPatrolling) {
             startChase(col.gameObject);
@@ -98,7 +100,10 @@ public class Enemy : MonoBehaviour
     }
 
     private void die() {
+        Vector3 pos = gameObject.transform.position;
         Destroy(gameObject);
+        GameObject blClone = Instantiate(bloodSpill, pos, Quaternion.identity);
+        Destroy(blClone, 4f);
     }
 
     public void getStunned() {

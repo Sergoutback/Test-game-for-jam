@@ -116,7 +116,7 @@ MonoBehaviour:
   slider: {fileID: 1971967568}
   low: {r: 1, g: 0, b: 0, a: 1}
   high: {r: 0, g: 1, b: 0.13274336, a: 1}
-  offset: {x: 0, y: 55}
+  offset: {x: 0, y: 0}
 --- !u!1 &903263843
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,3 +634,4 @@ MonoBehaviour:
   healthBar: {fileID: 544832055}
   maxHealth: 10
   health: 10
+  bloodSpill: {fileID: 3826247172429331570, guid: 9256c6a9b2f49ca44b924261d83dffbb, type: 3}
