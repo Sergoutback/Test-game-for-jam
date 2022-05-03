@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public Slider slider;
 
     void Start() {
-        Debug.Log(health);
+        
         maxHealth = health;
         slider.maxValue = maxHealth;
         slider.value = maxHealth;
