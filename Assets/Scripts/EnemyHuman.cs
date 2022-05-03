@@ -25,6 +25,7 @@ public class EnemyHuman : MonoBehaviour
     private GameObject player;
 
     public GameObject bloodSpill;
+    private Animator anim;
 
     void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player" && isPatrolling) {
@@ -55,6 +56,7 @@ public class EnemyHuman : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = gameObject.GetComponent<Animator>();
         healthBar.setHealth(health, maxHealth);
         StartCoroutine(DirectionCoroutine());
     }
@@ -64,6 +66,7 @@ public class EnemyHuman : MonoBehaviour
     {
 
         if (Time.timeScale != 0.0f) {       // to pause for dialog
+            anim.SetInteger("pose", 1);
             
             if (isPatrolling) {
                 Vector2 directionTranslation = (direction) ? transform.right : -transform.right;
