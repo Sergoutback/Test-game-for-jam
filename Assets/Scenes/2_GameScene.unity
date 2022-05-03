@@ -1594,7 +1594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3895558714059304472, guid: 445957f409eb8c943ad4c324674fcf34, type: 3}
       propertyPath: nextScene
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3895558714059304473, guid: 445957f409eb8c943ad4c324674fcf34, type: 3}
       propertyPath: m_Name
@@ -1623,6 +1623,10 @@ PrefabInstance:
     - target: {fileID: 3895558714059304475, guid: 445957f409eb8c943ad4c324674fcf34, type: 3}
       propertyPath: m_Offset.y
       value: 3.024544
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895558714059304476, guid: 445957f409eb8c943ad4c324674fcf34, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3895558714059304478, guid: 445957f409eb8c943ad4c324674fcf34, type: 3}
       propertyPath: m_Sprite
