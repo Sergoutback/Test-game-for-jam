@@ -10,8 +10,10 @@ public class Player : MonoBehaviour
     private int maxHealth;
     public Slider slider;
 
+    private AudioSource[] audioSources;
+
     void Start() {
-        
+        audioSources = GetComponents<AudioSource>();
         maxHealth = health;
         slider.maxValue = maxHealth;
         slider.value = maxHealth;
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour
 
     public void takeDamage(int damage)
     {
+        audioSources[1].Play();
         health -= damage;
         slider.value = health;
 

@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
 
     public HealthBarBehaviour healthBar;
 
+
     public int maxHealth = 3;
     public int health = 3;
 

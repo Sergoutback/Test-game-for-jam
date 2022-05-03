@@ -23,7 +23,7 @@ public class NPC : MonoBehaviour
     }
 
     IEnumerator ChangeScene() {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         SceneManager.LoadScene(nextScene);
     }
 
