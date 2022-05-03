@@ -37,7 +37,7 @@ public class ShootingBear : MonoBehaviour
                 GameObject roarClone = Instantiate(roar);
                 roarClone.transform.position = (Vector2) transform.position + direction * 30;
                 roarClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle + 180);
-                Destroy(roarClone, 0.4f);
+                Destroy(roarClone, 1f);
                 StartCoroutine(CoolDownRoarCoroutine());
             }
 
