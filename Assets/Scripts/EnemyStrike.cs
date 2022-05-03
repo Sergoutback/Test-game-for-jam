@@ -6,7 +6,7 @@ public class EnemyStrike : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D col) {
         if (col.CompareTag("Player")) {
-            col.transform.parent.GetComponent<Player>().takeDamage(1);
+            col.GetComponent<Player>().takeDamage(1);
         }
     }
 }
