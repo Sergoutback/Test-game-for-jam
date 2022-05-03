@@ -116,7 +116,7 @@ MonoBehaviour:
   slider: {fileID: 1971967568}
   low: {r: 1, g: 0, b: 0, a: 1}
   high: {r: 0, g: 1, b: 0.13274336, a: 1}
-  offset: {x: 0, y: 0}
+  offset: {x: 0, y: 55}
 --- !u!1 &903263843
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,8 +161,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.4250271, y: 4.3713903}
-  m_Size: {x: 4.014609, y: 4.5522265}
+  m_Offset: {x: 3.2567225, y: 23.084534}
+  m_Size: {x: 13.994955, y: 33.66156}
   m_Direction: 0
 --- !u!1 &911421880
 GameObject:
@@ -596,8 +596,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8922844, y: 24.8}
-  m_Size: {x: 41.02, y: 68.6}
+  m_Offset: {x: -0.7711134, y: 24.800003}
+  m_Size: {x: 24.386072, y: 50.302704}
   m_Direction: 0
 --- !u!58 &1948746372913205030
 CircleCollider2D:

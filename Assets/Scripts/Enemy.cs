@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     private bool direction = true;
     private bool isPatrolling = true;
     private bool isChasing = false;
+    private bool isStunned = false;
     private bool readyToAttack = true;
 
     public HealthBarBehaviour healthBar;
@@ -42,7 +43,7 @@ public class Enemy : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        if (col.gameObject.tag == "Player") {
+        if (col.gameObject.tag == "Player" && !isStunned) {
             col.gameObject.GetComponent<Player>().takeDamage(1);
         }
     }
@@ -113,6 +114,7 @@ public class Enemy : MonoBehaviour
     }
 
     IEnumerator StunCoroutune() {
+        isStunned = true;
         stopChase();
         isPatrolling = false;
         GameObject tempStars = Instantiate(stars, transform); 
@@ -120,6 +122,7 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(4f);
         isPatrolling = true;
         Destroy(tempStars);
+        isStunned = false;
     }
 
     IEnumerator ReloadAttackCoroutine() {
