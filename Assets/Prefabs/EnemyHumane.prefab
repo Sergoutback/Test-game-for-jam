@@ -659,12 +659,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 4485648447503054889, guid: edf7301981281c2438e6a435db885a93, type: 3}
-  strike: {fileID: 4710349539354955107, guid: fe4fda46edf676c4cac40a9721a8edb9, type: 3}
+  strike: {fileID: 6311414293886869791, guid: 432340038638de14897172d784adf290, type: 3}
   movementSpeed: 25
   minDistance: 50
   maxDistance: 300
-  stars: {fileID: 0}
-  healthBar: {fileID: 0}
+  stars: {fileID: 4223144219871882420, guid: fb8568e6615a4b94795c217ec0b4b4e1, type: 3}
+  healthBar: {fileID: 1055693167547653735}
   maxHealth: 3
   health: 3
-  bloodSpill: {fileID: 0}
+  bloodSpill: {fileID: 3826247172429331570, guid: 9256c6a9b2f49ca44b924261d83dffbb, type: 3}
