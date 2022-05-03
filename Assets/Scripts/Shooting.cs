@@ -12,6 +12,7 @@ public class Shooting : MonoBehaviour
     Vector2 lookDirection;
     float lookAngle;
 
+    private bool stunReady = true;
 
     void Update()
     {
@@ -33,16 +34,24 @@ public class Shooting : MonoBehaviour
                 Destroy(bulletClone, 5);
             }
 
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1) && stunReady)
             {
+                stunReady = false;
                 GameObject strikeClone = Instantiate(strike);
                 strikeClone.transform.position = (Vector2) transform.position + direction * 30;
                 strikeClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle + 90);
                 Destroy(strikeClone, 0.2f);
+                StartCoroutine(CoolDownCoroutine());
 
             }
         }
 
+    }
+
+
+    IEnumerator CoolDownCoroutine() {
+        yield return new WaitForSeconds(1f);
+        stunReady = true;
     }
     
 }
