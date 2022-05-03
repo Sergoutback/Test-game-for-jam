@@ -283,8 +283,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.4250271, y: 4.3713903}
-  m_Size: {x: 4.014609, y: 4.5522265}
+  m_Offset: {x: 2.425026, y: -8.104042}
+  m_Size: {x: 43.935997, y: 43.935997}
   m_Direction: 0
 --- !u!1 &1009435795105572097
 GameObject:
@@ -438,7 +438,7 @@ MonoBehaviour:
   slider: {fileID: 1009435794002019049}
   low: {r: 1, g: 0, b: 0, a: 1}
   high: {r: 0, g: 1, b: 0.13274336, a: 1}
-  offset: {x: 0, y: 0}
+  offset: {x: 0, y: 25}
 --- !u!1 &1515859304301026205
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 1515859304301026207}
   - component: {fileID: 1515859304301026204}
   m_Layer: 0
-  m_Name: Enemy (1)
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -469,7 +469,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515859304301026205}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 54.3, y: -418, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -518,8 +518,8 @@ SpriteRenderer:
   m_SortingLayerID: -1636023985
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9008404993469247343, guid: 600b5e35f9336c545bbfabe7158472fa, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4d44ff3cdb25ae14bbd76400eca61466, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -551,7 +551,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515859304301026205}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ba2225ecf4f2869449c9dffc1453a0aa, type: 2}
   m_CullingMode: 0
@@ -596,8 +596,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8922844, y: 24.8}
-  m_Size: {x: 41.02, y: 68.6}
+  m_Offset: {x: -1.1869469, y: -13.458}
+  m_Size: {x: 45.178463, y: 50.302704}
   m_Direction: 0
 --- !u!58 &1515859304301026207
 CircleCollider2D:
@@ -612,9 +612,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 23.339844}
+  m_Offset: {x: 0, y: -9.096283}
   serializedVersion: 2
-  m_Radius: 125.90223
+  m_Radius: 125.952545
 --- !u!114 &1515859304301026204
 MonoBehaviour:
   m_ObjectHideFlags: 0
