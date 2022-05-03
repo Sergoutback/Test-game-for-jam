@@ -5,41 +5,21 @@ using UnityEngine;
 
 public class PlayerMoves : MonoBehaviour
 {
-    public GameObject player;
     public int speed = 300;
     private int maxSpeed;
     public int speedRotation = 2;
-    private bool inWoods = false;
 
     private Animator anim;
-
-    void OnCollisionEnter2D(Collision2D col) {
-        if (col.transform.parent.gameObject.name == "Border") {
-            speed = maxSpeed / 2;
-            inWoods = true;
-        }
-    } 
-
-    void OnCollisionExit2D(Collision2D col) {
-        if (col.transform.parent.gameObject.name == "Border") {
-            speed = maxSpeed;
-            inWoods = false;
-        }
-    } 
-
-
 
     void Start()
     {
         maxSpeed = speed;
         anim = gameObject.GetComponent<Animator>();
-        player = (GameObject)this.gameObject;
     }
 
     [System.Obsolete]
     void Update()
     {
-        // speed = (inWoods) ? speed : maxSpeed;
         if (Time.timeScale != 0.0f) {
             anim.SetInteger("pose", 3);
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
