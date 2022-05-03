@@ -27551,7 +27551,7 @@ PrefabInstance:
     - target: {fileID: 4853977316141673687, guid: 62b96a10cb1888a4994d3a3158725762, type: 3}
       propertyPath: slider
       value: 
-      objectReference: {fileID: 1680321460}
+      objectReference: {fileID: 173610851}
     - target: {fileID: 4853977316141673691, guid: 62b96a10cb1888a4994d3a3158725762, type: 3}
       propertyPath: m_RootOrder
       value: 3
