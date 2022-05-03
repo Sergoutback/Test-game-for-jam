@@ -65,17 +65,17 @@ public class Enemy : MonoBehaviour
 
         if (Time.timeScale != 0.0f) {       // to pause for dialog
 
-            anim.SetInteger("pose", 1);
             
             
             if (isPatrolling) {
+                anim.SetInteger("pose", 1);
                 Vector2 directionTranslation = (direction) ? transform.right : -transform.right;
                 directionTranslation *= Time.deltaTime * movementSpeed;
                 transform.Translate(directionTranslation);
             }
 
             if (isChasing) {
-                
+                anim.SetInteger("pose", 1);
                 if (Vector2.Distance(transform.position, player.transform.position) >= minDistance) {
                     transform.position =  Vector2.MoveTowards(transform.position, player.transform.position, movementSpeed * 4 * Time.deltaTime);
 
@@ -120,6 +120,7 @@ public class Enemy : MonoBehaviour
     }
 
     IEnumerator StunCoroutune() {
+        anim.SetInteger("pose", 3);
         isStunned = true;
         stopChase();
         isPatrolling = false;
