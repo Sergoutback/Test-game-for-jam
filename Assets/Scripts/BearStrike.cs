@@ -6,7 +6,7 @@ public class BearStrike : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D col) {
         if (col.CompareTag("EnemyHitBox")) {
-            col.transform.parent.GetComponent<Enemy>().takeDamage(2);
+            col.transform.parent.GetComponent<EnemyHuman>().takeDamage(2);
         }
     }
 }
