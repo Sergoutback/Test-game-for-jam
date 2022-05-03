@@ -3271,7 +3271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (7)
+      value: Bear (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -7747,7 +7747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 167646339}
   m_Layer: 0
-  m_Name: Enemyies
+  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8179,7 +8179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (10)
+      value: Bear (10)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -12382,7 +12382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (1)
+      value: Bear
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -57340,7 +57340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (6)
+      value: Bear (6)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -63088,7 +63088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (9)
+      value: Bear (9)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -64045,7 +64045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (5)
+      value: Bear (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -74677,7 +74677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (12)
+      value: Bear (12)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -93950,7 +93950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (11)
+      value: Bear (11)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -97116,7 +97116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723047556}
   m_Layer: 0
-  m_Name: Enemyies
+  m_Name: Bears
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102128,7 +102128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (2)
+      value: Bear (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -105624,7 +105624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (4)
+      value: Bear (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -108516,7 +108516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (8)
+      value: Bear (8)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
@@ -114202,7 +114202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026205, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_Name
-      value: Enemy2 (3)
+      value: Bear (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1515859304301026213, guid: 9229cb659a43f8b4f8ad6179dfbdbf09, type: 3}
       propertyPath: m_RootOrder
